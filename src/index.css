@@ -1,0 +1,25 @@
+:root {
+    /* MAIN BACKGROUND COLOR */
+    --background: #000100;
+    
+    /* CARD SURFACE COLOR */
+    --surface: #0e0e0e;
+    
+    /* PRIMARY COLOR */
+    --primary: #42ffff;
+    
+    /* MAIN TEXT COLOR */
+    --text-primary: #ffffff;
+    
+    /* PARAGRAPH TEXT COLOR */
+    --text-secondary: #d9d6d6;
+    
+    /* INPUT BACKGROUND */
+    --input-background: #373737;
+    
+    /* INPUT TEXT PLACEHOLDER */
+    --input-text-placeholder: #9c9c9c;
+    
+    /* INPUT TEXT COLOR */
+    --input-text: #fff;
+}
