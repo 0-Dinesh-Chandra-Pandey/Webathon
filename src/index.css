@@ -23,3 +23,14 @@
     /* INPUT TEXT COLOR */
     --input-text: #fff;
 }
+
+@font-face {
+    font-family: 'fredoka';
+    src: url('./fonts/Fredoka.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'fredoka', serif;
+}
