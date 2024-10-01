@@ -1,9 +1,21 @@
 .hero-main {
-    background: url('../../assets/extra/bgImage.png') no-repeat;
     height: 100vh;
     width: 100%;
     background-position: center center;
     background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensure full-screen height */
+    overflow: hidden;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire area */
+    z-index: -1; /* Place the video behind the content */
 }
 
 .hero-main .wrapper {
@@ -12,6 +24,8 @@
     align-items: center;
     width: 100%;
     height: 80vh;
+    position: relative;
+    z-index: 1; 
 }
 
 .highlight {

@@ -24,6 +24,12 @@
     object-fit: cover;
     border-radius: 30px;
 }
+.content-wrapper .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
 .content-wrapper .right-section img {
     width: 300px;
@@ -49,6 +55,7 @@
 
 .content-wrapper .right-section p {
     color: #fff;
+    text-align: justify;
 }
 
 /* Media queries for responsiveness */

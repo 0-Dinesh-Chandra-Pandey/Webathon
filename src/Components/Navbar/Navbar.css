@@ -73,6 +73,10 @@ nav .nav-links {
     cursor: pointer;
 }
 
+.active-nav-link {
+    color: var(--primary);
+}
+
 /* Hide the menu icon on large screens */
 @media (min-width: 768px) {
     .menu-icon {

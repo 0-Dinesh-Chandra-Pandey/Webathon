@@ -1,0 +1,42 @@
+.main-contact-container {
+    width: 100%;
+    margin: 20px;
+    padding: 20px 40px;
+    display: flex;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact-left input, textarea {
+    padding: 16px;
+    margin: 10px 0;
+    background-color: var(--input-background);
+    border: none;
+    border-radius: 30px;
+    resize: none;
+}
+
+.contact-left input, textarea:focus {
+    outline: none;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section img {
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .right-section {
+        display: none;
+    }
+}

@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import "./services.css";
-import image from "../../assets/services/Service-1.png";
 import { servicesCardData } from "../../Data/services.js";
 
 const Services = () => {
