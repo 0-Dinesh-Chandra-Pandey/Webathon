@@ -1,0 +1,105 @@
+/* Base styles */
+.content-container {
+    width: 100%;
+    display: flex;
+    margin: 100px 0;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.content-wrapper .left-section {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.content-wrapper .left-section img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.content-wrapper .right-section img {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.content-wrapper .right-section .heading h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+}
+
+.content-wrapper .right-section .heading span {
+    width: 100px;
+    height: 4px;
+    border-radius: 20px;
+    background: var(--primary);
+    display: block;
+    margin: 10px 0;
+}
+
+.content-wrapper .right-section p {
+    color: #fff;
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets (screen width 768px and below) */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content-wrapper .left-section img,
+    .content-wrapper .right-section img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .content-wrapper .right-section .heading h1 {
+        font-size: 24px;
+    }
+
+    .content-wrapper .right-section .heading span {
+        width: 80px;
+    }
+}
+
+/* For mobile (screen width 480px and below) */
+@media (max-width: 480px) {
+    .content-container {
+        margin: 50px 0;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .content-wrapper .left-section img,
+    .content-wrapper .right-section img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .content-wrapper .right-section .heading h1 {
+        font-size: 22px;
+    }
+
+    .content-wrapper .right-section .heading span {
+        width: 60px;
+    }
+}

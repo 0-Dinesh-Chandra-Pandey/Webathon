@@ -11,8 +11,8 @@
 .resource-image img {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 280px;
     border-radius: 8px;
 }
 
@@ -24,7 +24,7 @@ h3 {
     text-transform: capitalize;
 }
 
-p {
+.resource-container p {
     color: var(--text-primary);
     text-align: center;
     margin-top: 40px;
