@@ -10,6 +10,7 @@
     display: flex;
     gap: 40px;
     margin: 20px 0;
+    justify-content: center;
 }
 
 .content-wrapper .left-section {
@@ -72,6 +73,12 @@
         width: 100%;
         max-width: 300px;
         height: auto;
+    }
+    
+    .content-wrapper .right-section {
+        justify-content: center;
+        align-items: center;
+
     }
 
     .content-wrapper .right-section .heading h1 {
