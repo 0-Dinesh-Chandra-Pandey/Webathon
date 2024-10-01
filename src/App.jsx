@@ -9,13 +9,14 @@ import Services from './Pages/Services/Services'
 import Incubation from './Pages/Incubation/Incubation'
 import Events from './Pages/Events/Events'
 import Resources from './Pages/Resources/Resources'
-import Practice from './Components/Practice'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
       {/* HOME PAGE */}
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -26,10 +27,6 @@ function App() {
         <Route path='/resources' element={<Resources />} />
         <Route path='/services' element={<Services />} />
       </Routes>
-      
-      <div>
-        <Practice />
-      </div>
     </>
   )
 }

@@ -3,7 +3,7 @@
     --background: #000100;
     
     /* CARD SURFACE COLOR */
-    --surface: #0e0e0e;
+    --surface: #2f2f2f;
     
     /* PRIMARY COLOR */
     --primary: #42ffff;
@@ -33,4 +33,9 @@
     margin: 0;
     padding: 0;
     font-family: 'fredoka', serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
 }

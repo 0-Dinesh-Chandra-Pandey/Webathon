@@ -1,0 +1,51 @@
+.main {   
+    height: 200px;
+    width: 100%;
+    display: flex;
+    background-color: var(--input-background);
+    margin-top: 40px;
+    border:10px;
+    border-color: grey;
+    width: 75%;
+    margin-left: 100px;
+    border-radius: 10px;
+    display:flex;
+    border: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    
+
+
+}
+.Image img{
+    border-radius: 4px;
+    align-items: flex-start;
+    height: 100%;
+    width:200px;
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline;
+    position: relative;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+}
+.Heading {
+    color: white;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 30px;
+    position: relative;
+}
+
+
+
+.text-about {
+    color: white;
+    text-align: left;
+    font-size: small;
+    word-wrap: inherit;
+
+}
+.Content{
+    width: fit-content;
+}

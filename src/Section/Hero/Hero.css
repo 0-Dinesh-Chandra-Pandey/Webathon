@@ -1,0 +1,57 @@
+.hero-main {
+    background: url('../../assets/extra/bgImage.png') no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-main .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.hero-main .text-container {
+    /* padding: 100px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    width: 500px;
+    margin: 0 auto;
+}
+
+.hero-main .text-container .heading {
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.hero-main .text-container .para {
+    color: var(--text-primary);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.CTA {
+    margin: 40px 0;
+}
+
+.CTA a {
+    padding: 10px 32px;
+    border: 2px solid var(--text-primary);
+    border-radius: 20px;
+    color: var(--text-primary);
+    font-weight: 400;
+}
+
+.CTA a:hover {
+    background-color: var(--text-primary);
+    color: var(--background);
+}

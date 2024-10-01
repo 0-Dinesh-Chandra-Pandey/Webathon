@@ -1,0 +1,10 @@
+.default-heading {
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: capitalize;
+}
+
+.highlighted-head {
+    font-weight: 600;
+    color: var(--primary);
+}
