@@ -5,16 +5,16 @@
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 100vh; /* Ensure full-screen height */
     overflow: hidden;
 }
+
 .video-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures video covers the entire area */
+    object-fit: contain; /* Ensures video covers the entire area */
     z-index: -1; /* Place the video behind the content */
 }
 
@@ -23,7 +23,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     position: relative;
     z-index: 1; 
 }
@@ -40,11 +40,14 @@
     align-items: center; 
     width: 500px;
     margin: 0 auto;
+    padding: 16px;
+    z-index: 1;
 }
 
-.hero-main .text-container .heading {
+.hero-main .text-container .heading h1 {
     color: var(--text-primary);
     text-align: center;
+    font-weight: 600;
 }
 
 .hero-main .text-container .para {
@@ -53,19 +56,8 @@
     margin-top: 20px;
 }
 
-.CTA {
-    margin: 40px 0;
-}
-
-.CTA a {
-    padding: 10px 32px;
-    border: 2px solid var(--text-primary);
-    border-radius: 20px;
-    color: var(--text-primary);
-    font-weight: 400;
-}
-
-.CTA a:hover {
-    background-color: var(--text-primary);
-    color: var(--background);
+@media (max-width: 768px) {
+    .video-background {
+        object-fit: cover;
+    }
 }

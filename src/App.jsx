@@ -9,7 +9,6 @@ import Services from './Pages/Services/Services'
 import Incubation from './Pages/Incubation/Incubation'
 import Events from './Pages/Events/Events'
 import Resources from './Pages/Resources/Resources'
-import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 

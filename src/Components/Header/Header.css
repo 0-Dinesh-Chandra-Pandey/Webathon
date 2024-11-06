@@ -1,0 +1,29 @@
+#comm-header {
+    margin: 30px auto;
+}
+
+#comm-header h1 {
+    color: var(--text-primary);
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#comm-header h1 .highlight {
+    color: var(--primary);
+}
+
+#comm-header p {
+    color: var(--text-primary);
+    text-align: center;
+    width: 60%;
+    margin: 40px auto 0 auto;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #comm-header p {
+        width: 80%;
+        font-size: 14px;
+    }
+}

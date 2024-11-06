@@ -10,35 +10,51 @@ import img8 from "../assets/events/8.jpg";
 const photoGallaryData = [
     {
         title: "Photo Title",
-        imgSrc: img1,
+        src: img1,
+        width: 2,
+        height: 1,
     },
     {
         title: "Photo Title",
-        imgSrc: img2,
+        src: img2,
+        width: 2,
+        height: 1,
     },
     {
         title: "Photo Title",
-        imgSrc: img3,
+        src: img3,
+        width: 4,
+        height: 1,
     },
     {
         title: "Photo Title",
-        imgSrc: img4,
+        src: img4,
+        width: 2,
+        height: 1,
     },
     {
         title: "Photo Title",
-        imgSrc: img5,
+        src: img5,
+        width: 2,
+        height: 1,
     },
     {
         title: "Photo Title",
-        imgSrc: img6,
+        src: img6,
+        width: 4,
+        height: 1,
     },
     {
         title: "Photo Title",
-        imgSrc: img7,
+        src: img7,
+        width: 2,
+        height: 1,
     },
     {
         title: "Photo Title",
-        imgSrc: img8,
+        src: img8,
+        width: 2,
+        height: 1,
     },
 ];
 

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Hero.css";
 import video from "../../assets/extra/backgroundVideo.mp4"
+import Button from "../../Components/Button/Button";
 
 const Hero = () => {
     return (
@@ -11,7 +12,6 @@ const Hero = () => {
                     <source src={video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <Navbar />
 
                 <div className="wrapper">
                     <div className="text-container">
@@ -27,9 +27,7 @@ const Hero = () => {
                             </p>
                         </div>
                         
-                        <div className="CTA">
-                            <a href="#">Explore!</a>
-                        </div>
+                        <Button buttonLink={"#"} buttonText={"Explore!"} />
                     </div>
                 </div>
             </div>

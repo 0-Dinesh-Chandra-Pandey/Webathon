@@ -1,42 +1,83 @@
-.main-contact-container {
-    width: 100%;
-    margin: 20px;
-    padding: 20px 40px;
+.contact-form-container {
     display: flex;
+    padding: 40px;
+    background-color: var(--surface);
+    border-radius: 24px;
+    gap: 50px;
+    margin-bottom: 100px;
 }
 
-.contact-left {
-    display: flex;
-    flex-direction: column;
+.contact-form-container .input-area {
     width: 50%;
-}
+    padding: 10px;
+} 
 
-.contact-left input, textarea {
-    padding: 16px;
-    margin: 10px 0;
+.contact-form-container .input-area .input input,textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 16px 20px;
     background-color: var(--input-background);
+    border-radius: 8px;
+    box-sizing: border-box;
     border: none;
-    border-radius: 30px;
-    resize: none;
+    font-size: 18px;
+    color: var(--text-primary);
+    
+    &::placeholder {
+        color: var(--input-text-placeholder);
+    }
+    
+    &:focus {
+        outline: none;
+    }
 }
 
-.contact-left input, textarea:focus {
-    outline: none;
+.contact-form-container .input-area .input textarea {
+    resize: vertical;
+    height: 140px !important;
 }
 
-.right-section {
+.contact-form-container .input-area  .input-button button {
+    font-size: 16px;
+    padding: 10px 40px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 12px;
+    transition: .3s all;
+    
+    &:hover {
+        color: var(--surface);
+        background: var(--primary);
+    }
+}
+
+.contact-form-container .message-area {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.right-section img {
-    width: 200px;
+.contact-form-container .message-area img {
+    width: 350px;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
-    .right-section {
-        display: none;
+    .contact-form-container {
+        flex-direction: column;
+    }
+    
+    .contact-form-container .input-area {
+        width: 100%;
+    }
+    
+    .contact-form-container .message-area {
+        width: 100%;
+    }
+
+    .contact-form-container .message-area img {
+        width: 300px;
     }
 }

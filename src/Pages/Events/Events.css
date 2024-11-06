@@ -1,0 +1,8 @@
+.react-photo-gallery--gallery {
+    gap: 2px;
+}
+
+.react-photo-gallery--gallery div img {
+    border-radius: 8px;
+    object-fit: cover;
+}

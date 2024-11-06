@@ -1,0 +1,140 @@
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-data-container {
+    display: flex;
+    background: var(--surface);
+    padding: 20px 20px;
+    gap: 10px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slider-data-container .left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-data-container .left-content img {
+    width: 250px;
+}
+
+.slider-data-container .right-content {
+    padding-right: 20px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-data-container .right-content h4 {
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+    font-weight: 500;
+    width: 100%;
+}
+
+.slider-data-container .right-content p {
+    color: var(--text-primary);
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#slider-buttons {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 30px 0;
+    gap: 14px;
+    
+}    
+
+#slider-buttons .prev, .nxt {
+    color: var(--text-primary);
+    padding: 8px;
+    border: 1px solid var(--surface);
+    border-radius: 8px;
+    
+    &:hover {
+        cursor: pointer;
+    }
+    
+    &:active {
+        background-color: var(--surface);
+    }
+}
+
+#slider-buttons .disabled-button-slider {
+    opacity: .5;
+    cursor: default !important;
+}
+
+
+@media (max-width: 768px) {
+    .slider-data-container {
+        width: 80%;
+        margin: auto;
+        gap: 0;
+    }
+
+    .slider-data-container .left-content img {
+        width: 200px;
+    }
+
+    .slider-data-container .right-content {
+        margin-top: 6px;
+    }
+    
+   .slider-data-container .right-content h4 {
+        margin-bottom: 10px;
+   }
+}
+
+@media (max-width: 576px) { 
+    .slider-data-container {
+        flex-direction: column-reverse;
+        padding: 20px;
+    } 
+    
+    .slider-data-container .left-content {
+        margin: 20px 0;
+    }
+    
+    .slider-data-container .left-content img {
+        width: 220px;
+    }
+    
+    .slider-data-container .right-content {
+        padding-right: 0;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 100px;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        right: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        right: 100px;
+    }
+}
