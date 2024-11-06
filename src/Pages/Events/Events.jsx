@@ -1,10 +1,15 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header/Header";
-import Gallery from "react-photo-gallery";
-import { photoGallaryData } from "../../Data/photoGallery";
+import ImageGallery from "react-image-gallery";
+import { photoGallaryData } from "../../Data/photoGallery.js";
 import "./Events.css";
 import Footer from "../../Section/Footer/Footer";
+
+// const formattedGalleryData = photoGallaryData.map(photo => ({
+//     original: photo.src,
+//     thumbnail: photo.src,
+// }));
 
 const Events = () => {
     return (
@@ -21,11 +26,22 @@ const Events = () => {
                 </div>
 
                 {/* Image Gallery */}
-                <div className="gallery-wrapper" style={{marginBottom: "80px"}} lazyLoad={true}>
-                    <Gallery photos={photoGallaryData} />
-                </div>
+                {/* <div className="gallery-wrapper" style={{ marginBottom: "80px" }}>
+                    <ImageGallery items={formattedGalleryData} lazyLoad={true} />
+                </div> */}
+
+                <h1
+                    style={{
+                        textAlign: "center",
+                        color: "white",
+                        marginBottom: "48px",
+                        fontWeight: 500,
+                    }}
+                >
+                    Comming Soon...
+                </h1>
             </div>
-            
+
             <Footer />
         </>
     );
