@@ -1,8 +1,6 @@
 import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header/Header";
-import ImageGallery from "react-image-gallery";
-import { photoGallaryData } from "../../Data/photoGallery.js";
 import "./Events.css";
 import Footer from "../../Section/Footer/Footer";
 
